@@ -19,6 +19,7 @@ export default function App() {
   const onDrop = useCallback(async (acceptedFiles: File[]) => {
     if (acceptedFiles.length === 0) return;
 
+
     setIsProcessing(true);
     setProgress(`0 / ${acceptedFiles.length}`);
     setResults([]);
